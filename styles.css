@@ -177,6 +177,102 @@ body {
     font-family: "Poppins";
     font-size: var(--fs-400);
     line-height: 1.5;
-    min-height: 100vh;
-    display: grid;
+}
+
+
+.content-container {
+  padding: 2rem 4rem;
+}
+
+.navbar {
+justify-content: space-between;
+gap: 0;
+max-width: 1280px;
+margin: 0 auto;
+}
+
+
+.fa-bars {
+    display: none;
+    position: relative;
+}
+
+.mobile-menu {
+    position: absolute;
+    display: none;
+    top: 200%;
+    right: -50%;
+    width: 95vw;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    transition-timing-function: ease-in;
+    transition: 0.7s;
+
+    
+}
+
+@keyframes mobilemenu {
+    
+}
+
+.mobile-menu > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-menu  > button {
+    text-align: center;
+   width: 100%;
+   padding: 1rem ;
+}
+.mobile-login {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.nabvar-lists > ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-login-btn {
+    align-items: center;
+}
+
+.signup-btn, .mobile-menu-btn {
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 19px;
+}
+
+.nabvar-lists:hover, .navbar-login:hover, .signup-btn:hover {
+    cursor: pointer;
+} 
+.nabvar-lists, .navbar-login, .signup-btn {
+    display: block;
+    
+}
+
+@media (max-width: 45rem) {
+ .content-container {
+    padding: 1.5rem 1rem;
+  }
+  .nabvar-lists, .navbar-login, .signup-btn {
+      display: none;
+  }
+  .fa-bars {
+    display: block;
+}
+.mobile-menu {
+    display: block;
+}
+
+.mobile-menu > hr {
+    opacity: 0.1;
+}
 }
