@@ -281,6 +281,7 @@ margin: 0 auto;
 
 .title-get-started {
     overflow: hidden;
+    margin-bottom: -4rem;
 }
 
 
@@ -360,4 +361,131 @@ margin: 0 auto;
     align-self: center;
 }
 
+}
+
+
+.shorten-url {
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-image: url(/URL-Shorting-Landing-Page/images/bg-shorten-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.shorten-url > input {
+    padding: 0.9rem 1rem;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.shorten-url > button {
+    padding: 0.9rem 1rem;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+
+.shorten-url-wrapper {
+    position: relative;
+    bottom: -6.5rem;
+}
+
+@media (min-width: 45rem) {
+
+    .shorten-url-wrapper {
+        max-width: 1280px;
+        margin: 0 auto;
+        bottom: -6rem;
+    }
+    .shorten-url {
+        flex-direction: row;
+        padding: 1.8rem;
+        border-radius: 10px;
+        background-image: url(/URL-Shorting-Landing-Page/images/bg-shorten-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: center;  
+        background-size: cover;
+
+       
+    }
+    .shorten-url > input {
+        flex: 1;
+    }
+    
+    .shorten-url > button {
+     flex: 0.3;
+    }
+    
+}
+
+
+.statistics-title {
+    text-align: center;
+}
+
+.statistics-wrapper  {
+    background-color: hsl(230, 25%, 95%);
+    padding-top: 10rem;
+}
+
+
+.services {
+    padding: 8rem 0;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.card > p {
+    line-height: 1.5rem;
+    letter-spacing: 0.2px;
+    position: relative;
+    top: -10px;
+}
+
+.card > h3 {
+    position: relative;
+    top: -30px;
+}
+.card-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    top: -80px;
+}
+
+.card-img img {
+    width: 55px;
+    height: 55px;
+}
+
+.brand {
+    position: relative;
+    z-index: 4;
+}
+
+.brand-line {
+    position: absolute;
+    height: 72px;
+    width: 8px;
+    z-index: 1;
+    left: 50%;
+}
+
+.records {
+    margin-top: 8rem;
 }
