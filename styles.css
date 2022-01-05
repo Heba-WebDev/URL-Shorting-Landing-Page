@@ -433,9 +433,22 @@ margin: 0 auto;
     padding-top: 10rem;
 }
 
+.statistics-wrapper > * {
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
 .services {
     padding: 8rem 0;
+    max-width: 1160px;
+}
+
+@media (min-width: 45rem)  {
+    .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
 }
 
 .card {
@@ -444,7 +457,6 @@ margin: 0 auto;
     border-radius: 5px;
     text-align: center;
 }
-
 
 .card > p {
     line-height: 1.5rem;
@@ -488,4 +500,68 @@ margin: 0 auto;
 
 .records {
     margin-top: 8rem;
+}
+
+.full-custom  {
+    margin-top: 8rem;
+}
+
+.desktop-brand-line {
+    display: none;
+}
+
+@media (min-width: 45rem) {
+  
+    .card {
+        padding: 1rem 0.8rem;
+    }
+
+    .brand-line {
+       display: none;
+    }
+    
+    .brand {
+        margin-top: 0;
+        position: relative;
+        top: -1rem;
+    }
+   .records {
+    margin-top: 0;
+    position: relative;
+
+   }
+
+   .full-custom {
+    margin-top: 0;
+    position: relative;
+    bottom: -1rem;
+   }
+
+
+   .card > p {
+    top: 0px;
+    padding-bottom: 0.8rem;
+    }
+
+    .desktop-brand-line {
+        display: block;
+        width: 430px;
+        height: 9px;
+        position: absolute;
+        top: 130%;
+        left: 30%;
+    }
+ 
+}
+
+@media (min-width: 60rem) {
+    .desktop-brand-line {
+        display: block;
+        width: 600px;
+        height: 9px;
+        position: absolute;
+        top: 125%;
+        left: 30%;
+     
+    }
 }
