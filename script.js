@@ -18,3 +18,18 @@ function showMobileMenu() {
     }
     
 }
+
+
+let longURL = "kooora.com"
+
+
+fetch(`https://api.shrtco.de/v2/shorten?url=${longURL}`, {
+  method: 'GET'
+})
+.then(response => response.json())
+.then(data => {
+  console.log(data.result.short_link);
+})
+.catch(error => {
+  console.error('Error:', error);
+});
