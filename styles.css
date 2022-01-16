@@ -389,15 +389,29 @@ margin: 0 auto;
     font-weight: lighter;
 }
 
+.shortened-url {
+    width: 100%;
+    animation: short-url-load 550ms ease-in-out 1ms 1 normal forwards;
+    
+}
 
-.shorten-url-wrapper {
+@keyframes short-url-load  {
+0% {
+ transform: translateX(-100%);
+}
+100%{
+    transform: translateX(0%);
+}
+}
+
+.shorten-url-wrapper,.shortened-url {
     position: relative;
     bottom: -6.5rem;
 }
 
 @media (min-width: 45rem) {
-
-    .shorten-url-wrapper {
+    
+    .shorten-url-wrapper, .shortened-url {
         max-width: 1280px;
         margin: 0 auto;
         bottom: -6rem;
@@ -410,8 +424,6 @@ margin: 0 auto;
         background-repeat: no-repeat;
         background-position: center;  
         background-size: cover;
-
-       
     }
     .shorten-url > input {
         flex: 1;
@@ -458,6 +470,7 @@ margin: 0 auto;
     text-align: center;
 }
 
+
 .card > p {
     line-height: 1.5rem;
     letter-spacing: 0.2px;
@@ -497,6 +510,8 @@ margin: 0 auto;
     z-index: 1;
     left: 50%;
 }
+
+
 
 .records {
     margin-top: 8rem;
@@ -680,4 +695,64 @@ margin: 0 auto;
 .footer-company-list {
     text-align: left;
 }
+}
+
+
+.shortened-urls-wrapper  {
+    background-color: hsl(230, 25%, 95%);
+}
+
+
+.shortened-url {
+    background-color: var(--white);
+    position: relative;
+    top: 5rem;
+    border-radius: 8px;
+    padding: 1rem ;
+}
+
+@media (min-width: 45rem) {
+
+    .shortened-url  {
+        max-width: 1160px;
+        margin: 0 auto;
+        
+    }
+}
+
+
+
+.shortened-url > hr {
+    opacity: 0.5;
+    padding: 0;
+}
+
+.original {
+    color: var(--dark-blue);
+    padding: 0.3rem 0;
+}
+
+.short {
+    color: var(--cayan);
+    padding: 0.3rem 0;
+}
+
+.copy {
+    width: 100%;
+    border: 0;
+    color: var(--white);
+    background-color: var(--cayan);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    margin-top: 0.4rem;
+}
+
+.copied {
+    width: 100%;
+    border: 0;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    margin-top: 0.4rem;
 }
