@@ -63,7 +63,11 @@ function shortenTheURL() {
     .then(data => {
   
      shortenURL = `${data.result.short_link}`;
-     document.querySelector('.original').textContent = `${userURL.value}`;
+     if(userURL.value.length > 40) {
+      document.querySelector('.original').textContent = `${userURL.value.slice(0, 39)}...`;
+     } else {
+      document.querySelector('.original').textContent = `${userURL.value}`;
+     }
      document.querySelector('.short').textContent = `${data.result.short_link}`;
      userURL.value = '';
      //console.log(data.result.short_link);
@@ -95,7 +99,7 @@ navigator.clipboard.writeText(shorturl);
     copybtn.classList.add('copy');
     copybtn.classList.remove('copied');
     copybtn.textContent = 'Copy'
-  }, 3000)
+  }, 2000)
 
 }
 
