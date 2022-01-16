@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Preview](./https://github.com/Heba-WebDev/URL-Shorting-Landing-Page/blob/main/design/desktop-preview.jpg?raw=true)
+![Preview](./https://ibb.co/HDfbzdP)
 
 
 
