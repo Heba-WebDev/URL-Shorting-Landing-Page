@@ -63,8 +63,8 @@ function shortenTheURL() {
     .then(data => {
   
      shortenURL = `${data.result.short_link}`;
-     if(userURL.value.length > 40) {
-      document.querySelector('.original').textContent = `${userURL.value.slice(0, 39)}...`;
+     if(userURL.value.length > 22) {
+      document.querySelector('.original').textContent = `${userURL.value.slice(0, 22)}...`;
      } else {
       document.querySelector('.original').textContent = `${userURL.value}`;
      }
